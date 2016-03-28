@@ -67,6 +67,7 @@ document.webL10n = (function(window, document, undefined) {
 
   function getL10nDictionary() {
     var script = document.querySelector('script[type="application/l10n"]');
+    console.log(script);
     // TODO: support multiple and external JSON dictionaries
     return script ? JSON.parse(script.innerHTML) : null;
   }
