@@ -996,6 +996,7 @@ document.webL10n = (function(window, document, undefined) {
     getLanguage: function() { return gLanguage; },
     setLanguage: function(lang, callback) {
       loadLocale(lang, function() {
+        console.log('setLanguage');
         if (callback)
           callback();
         translateFragment();

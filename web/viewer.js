@@ -7567,6 +7567,7 @@ function webViewerInitialized() {
     }
   }
 
+  console.log(locale);
   mozL10n.setLanguage(locale);
 
   if (!PDFViewerApplication.supportsPrinting) {
